@@ -1,0 +1,1 @@
+pics = pics.reverse()
