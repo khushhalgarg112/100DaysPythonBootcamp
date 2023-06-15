@@ -51,11 +51,13 @@ prime_check(number)'''
 
 
 # Caesar Cipher
+
 print("Welcome TO CAESAR CIPHER")
 letters = "a b c d e f g h i j k l m n o p q r s t u v w x y z".split(" ")
 
 end = True
 while end:
+    # Taking inputs
     choose = input("Type 'encode' to encode you code or type 'decode' to decode your code:- ")
     if choose == 'encode':
         code = input("Enter your code to encode it :-  ").lower()
@@ -64,28 +66,36 @@ while end:
     else:
         print("Wrong input, Try to run program again and enter corret input")
         break
+    # input of spacing
     code_number = int(input("Enter the number of spacing:- "))
 
     encode = []
     length_of_code = len(code)
     length_of_letters = len(letters)
+    # converting input text in a list
     for i in range(0,length_of_code):
         encode.append(code[i])
 
     result = ""
+    # condition for encoding
     if choose == 'encode':
         for j in range(0,length_of_code):
             for k in range(0,length_of_letters):
                 if(encode[j] == letters[k]):
-                    if(k+code_number > 26):
-                        encode[j] = letters[k+code_number-26]
+                    if(k+code_number >= 26):
+                        encode[j] = letters[(k+code_number)-26]
+                        # print(encode)
+                        # print(letters)
                         result += encode[j]
                         break
                     else:
                         encode[j] = letters[k+code_number]
+                        # print(encode)
+                        # print(letters)
                         result += encode[j]
                         break
         print(f"Your Encoded code is:- {result}")
+    # condition for decoding
     elif choose == 'decode':
         for j in range(0,length_of_code):
             for k in range(0,length_of_letters):
@@ -100,7 +110,7 @@ while end:
                         break          
 
         print(f"Your Decoded code is:- {result}")
-
+    # while loop exit condition
     cont = input("Do you want to continue ? Y or N:- ")
     if cont == 'Y':
         end = True
