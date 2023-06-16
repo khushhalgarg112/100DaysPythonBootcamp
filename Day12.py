@@ -57,6 +57,7 @@ def guessed(attempt,random_number):
             print("Too low")
         else:
             return True
+    return False
 
 def result(fun, random_number):
     if fun:
@@ -64,7 +65,6 @@ def result(fun, random_number):
     else:
         print("You have run out of all guess, YOU LOST!")
         print(f"Correct Number is {random_number}")
-
 
 print("Welcome to the Number Guessing game!")
 print('''
