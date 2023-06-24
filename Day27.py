@@ -2,28 +2,25 @@ from tkinter import *
 
 element = Tk()
 element.title("Converter")
-element.minsize(400, 400)
+element.minsize(250, 150)
+element.config(padx=30, pady=30)
 
 
-def clicked():
+"""def clicked():
     my_label["text"] = inputs.get()
 
 
 my_label = Label(text="Helo Everyone")
-my_label.grid(row=2,column=3)
+my_label.grid(column=0, row=0)  # we don't pack and place when using grid
 # my_label.place(x=30, y=70)    gives the position whereever we want
 # my_label.pack(side="left")
 # my_label.config(text = "hiiii")
 
 inputs = Entry(width=10)
-inputs.pack()
+inputs.grid(column=1, row=1)
 
 my_button = Button(text="Click me", command=clicked)
-my_button.pack()
-
-
-element.mainloop()
-
+my_button.grid(column=2, row=2)"""
 
 # Add as many argumrnts you want
 """
@@ -54,3 +51,29 @@ checkstate = IntVar()
 check = Checkbutton(text="Is on?", variable=checkstate, command=chechbtn)
 check.pack()
 """
+
+
+def convert():
+    ans["text"] = int(inputs.get()) * 1.609
+
+
+inputs = Entry(width=15)
+inputs.grid(column=1, row=0)
+
+miles = Label(text="miles")
+miles.grid(column=2, row=0)
+
+equal = Label(text="is equal to")
+equal.grid(column=0, row=1)
+
+ans = Label(text="0")
+ans.grid(column=1, row=1)
+
+kms = Label(text="Km")
+kms.grid(column=2, row=1)
+
+btn = Button(text="Convert", command=convert)
+btn.grid(column=1, row=2)
+
+
+element.mainloop()

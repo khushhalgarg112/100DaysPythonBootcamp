@@ -10,3 +10,8 @@ input_word = input("Enter the word-> ").upper()
 result = {let:data_dic[let] for let in input_word}
 
 print(result)
+
+
+
+
+
