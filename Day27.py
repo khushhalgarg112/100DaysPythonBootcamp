@@ -33,7 +33,7 @@ argument(1,2,3,4,5,6,7,8,9,10)
 """
 #  Add as many keyword arguments
 
-"""def keyargu(**kw):   #Type og thsi is a dictoniary 
+"""def keyargu(**kw):   #Type of this is a dictoniary 
     # print(kw.student)     we dont call it like this beacuse this is not an object
     # print(kw["classes"])
     # print(kw.get("marks"))  This is not giving key error beacuse using get it return none 
