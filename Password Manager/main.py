@@ -39,6 +39,7 @@ def genrate_password():
     pass_entry.insert(0, password)
     pyperclip.copy(password)
 
+
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
 
