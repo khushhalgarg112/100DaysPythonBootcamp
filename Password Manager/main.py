@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import random
 import pyperclip
+import json
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
@@ -42,23 +43,33 @@ def genrate_password():
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
-
 def save_password():
+    web = web_entry.get()
+    e = email_entry.get()
+    p = pass_entry.get()
+    data_entry = {
+        web: {
+            "email": e,
+            "password": p,
+        }
+    }
+
     if email_entry.get() == "" or web_entry.get() == "" or pass_entry.get() == "":
         messagebox.showinfo(title="Details", message="Every field is mandatory")
     else:
-        is_ok = messagebox.askokcancel(
-            title=web_entry.get(),
-            message=f"These are your credentials\n Email: {email_entry.get()} \n Password:{pass_entry.get()} \n Are you ok to got ?",
-        )
-        if is_ok:
-            with open("data.txt", mode="a") as f:
-                f.write(
-                    f"{web_entry.get()} | {email_entry.get()} | {pass_entry.get()}\n"
-                )
-            web_entry.delete(0, END)
-            email_entry.delete(0, END)
-            pass_entry.delete(0, END)
+        try:
+            with open("data.json", mode="r") as f:
+                read_data = json.load(f)  # Read the data
+                read_data.update(data_entry)  # Update the data
+            with open("data.json", mode="w") as f:
+                json.dump(read_data, f, indent=4)
+        except FileNotFoundError:
+            with open("data.json", mode="w") as f:
+                json.dump(data_entry, f, indent=4)
+            # Add the data
+        web_entry.delete(0, END)
+        email_entry.delete(0, END)
+        pass_entry.delete(0, END)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
