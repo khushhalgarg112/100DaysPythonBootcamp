@@ -4,10 +4,12 @@ import random
 import pandas as pd
 
 my_mail = "khusgarg1@gmail.com"
+passwords = "whoctfqvshlsoggp"
+
+my_mail = "khusgarg1@gmail.com"
 password = "cykaddfeqswxekvz"
 
 time = dt.datetime.now()
-
 
 with open("quotes.txt") as quotes:
     quote_list = quotes.readlines()
@@ -21,6 +23,7 @@ with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         to_addrs="khusgarg2002@gmail.com",
         msg=f"Subject: Today Motivation\n\n {quote}",
     )
+
 
 """date = dt.datetime.now()
 today_tuple = (date.month, date.day)
@@ -45,6 +48,7 @@ if today_tuple in birthday_list_dic:
             msg=f"Subject: Happy Birthday \n\n {new_con}",
         )
 """
+
 
 # Sending mail
 """import smtplib
