@@ -2,12 +2,12 @@ from twilio.rest import Client
 import smtplib
 
 
-ACC_SID = "AC47f7d48de5d76ea50ff0765acbaf333f"
-API_KEY = "4ce91d0bc63a01f15cb29fe17ef564b9"
-TWILIO_NUM = "+14178554309"
+ACC_SID = "AC47f7d48de5d76ea50f#f0765acbaf333f"
+API_KEY = "4ce91d0bc63a01f15cb2#9fe17ef564b9"
+TWILIO_NUM = "+14178#554309"
 PERSONAL_NUMBER = "+918307191801"
 
-MAIL_TOKEN = "lsfndladshiiavmo"
+MAIL_TOKEN = "lsfndla#dshiiavmo"
 MY_MAIL = "khusgarg1@gmail.com"
 
 class NotificationManager:
