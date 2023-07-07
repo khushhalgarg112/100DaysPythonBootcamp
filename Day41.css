@@ -1,0 +1,24 @@
+body {
+    background-color: #EAB2A0;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    border-color: #435B66;
+
+    width: 6%;
+}
+
+h1 {
+    color: #A76F6F;
+}
+
+h2 {
+    color: #A76F6F;
+}
+
+img:hover {
+    border-radius: 100%;
+}
