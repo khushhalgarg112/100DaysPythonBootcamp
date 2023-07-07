@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: Verdana;
+    font-size: 50px;
+    color: #66BFBF;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #66BFBF;
+}
+
+.properties {
+    color: grey;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-family: Sacramento, cursive;
+    font-size: 120px;
+    color: #66BFBF;
+
+}
+
+hr {
+    width: 5%;
+    border: 6px dotted grey;
+    border-bottom: none;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.topcontainer {
+    background-color: #E4F9F5;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.python {
+    text-decoration: underline;
+}
+
+.middlecontainer {
+    margin-top: 50px;
+}
+
+.bottomcontainer {
+    background-color: #66BFBF;
+    height: 130px;
+    width: 100%;
+}
+
+.personal {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 0px;
+}
+
+.skills {
+    font-size: 80px;
+    color: #66BFBF;
+    margin: 20px auto 20px auto;
+}
+
+
+.lowercloud {
+    position: absolute;
+    left: 300px;
+
+}
+
+.uppercloud {
+    position: relative;
+    left: 400px;
+}
+
+.work {
+    margin: 50px auto;
+}
+
+.work {
+    width: 600px;
+}
+
+.icon1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+.icon2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: relative;
+    float: right;
+    margin-left: 30px;
+}
+
+
+.deals {
+    margin: 0px;
+    text-align: left;
+}
+
+a {
+    color: black;
+}
+
+
+.social {
+    margin: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
