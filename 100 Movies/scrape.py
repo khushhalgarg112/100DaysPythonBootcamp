@@ -17,7 +17,6 @@ def my_css(css_class):
 my_anchor = soup.find_all(href=my_css)
 print(my_anchor)
 
-# my_list = []
 a = 1
 with open("100 Movies/Movies.txt", mode="w") as file:
     file.write(" Top 100 movies\n")
