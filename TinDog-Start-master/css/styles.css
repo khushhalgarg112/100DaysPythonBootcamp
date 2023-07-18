@@ -1,0 +1,188 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+nav {
+    margin-bottom: 35px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+
+/* Navbar stylr */
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+
+}
+
+.contanier-fluid {
+    padding: 3% 15%;
+}
+
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+
+
+.nav-item {
+    padding: 0 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* title Image */
+
+.titleimg{
+    text-align: center;
+}
+
+#book {
+    position: absolute;
+    transform: rotate(20deg);
+    width: 18%;
+}
+
+
+/* Downlaod-button */
+
+.download-button {
+    margin: 5% 3% 5% 3%;
+}
+
+
+/* INfo section */
+
+#features {
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+
+}
+
+.info {
+    text-align: center;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* Testinomials */
+
+#testimonials {
+
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.test-img {
+    width: 15%;
+    border-radius: 100%;
+    margin: 20px;
+
+}
+
+
+/* Press or company */
+
+#press {
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.press-img {
+    width: 20%;
+    padding: 0px 40px;
+}
+
+/* Priicng Section */
+
+#but {
+    width: 100%;
+}
+
+.pricing-column {
+    padding: 2% 3%;
+}
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+/* Media Query */
+
+@media (max-width: 996px) {
+
+    #book {
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+        text-align: center;
+    }
+
+   .titlediv{
+        text-align: center;
+    }
+}
+
+/* Section cta */
+
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 50px;
+}
+
+#conclusion{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 4rem;
+    line-height: 1.5;
+}
+
+.download-last{
+    margin: 3% 1% 3% 1%;
+}
+
+/* Copyright part */
+
+#footer{
+    text-align: center;
+    padding: 50px;
+}
+
