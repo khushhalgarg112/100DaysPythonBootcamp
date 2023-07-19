@@ -8,7 +8,7 @@ sheet_data = data_manager.get_destination_data()
 flight_search = FlightSearch()
 notification = NotificationManager()
 
-ORIGIN_CITY_IATA = "LON"
+ORIGIN_CITY_IATA = "DEL"
 
 tomorrow = datetime.now() + timedelta(days=1)
 six_month_from_today = datetime.now() + timedelta(days=(6 * 30))
