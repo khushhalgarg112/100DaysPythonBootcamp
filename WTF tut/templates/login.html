@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{%block content%}
+<div class="container">
+	<h1>Login</h1>
+	<form action="{{url_for('login')}}" method="post">
+		{{log_in.csrf_token}}
+		<p>{{log_in.Email.label}} <br> {{log_in.Email(size=30)}}
+			{%for err in log_in.Email.errors: %}
+			<span style="color: red;"> {{err}}</span>
+			{% endfor %}
+		</p>
+		<p>{{log_in.Password.label}} <br>{{log_in.Password(size=30)}}
+			{%for err in log_in.Password.errors: %}
+			<span style="color: red;"> {{err}}</span>
+			{% endfor %}
+		</p>
+		{{log_in.submit}}
+	</form>
+</div>
+{%endblock%}
